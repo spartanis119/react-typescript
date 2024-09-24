@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     working_dir: /opt/data  
+    # command: ["tail", "-f", "/dev/null"]
     command: ["npm","run","dev","--","--host"]
     image: react_server:1.0
     container_name: react_dev 
